@@ -1,0 +1,6 @@
+.photo-list img {
+    cursor: default;
+    width: 30vw;
+    max-width: 60%;
+    height: auto;
+}

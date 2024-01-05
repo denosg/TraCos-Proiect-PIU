@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.container-text h2 {
+    padding-left: 5vw;
+    font-weight: 900;
+    color: #99110f;
+    font-size: 38px;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.container-text p {
+    width: 70%;
+    padding-left: 6vw;
+    font-weight: 400;
+    color: #000000;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.container .fuel_type {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 40px;
+}
+
+.container .type {
+    padding-left: 10vw;
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.container .more_info {
+    font-weight: 700;
+    color: #99110f;
+    font-size: 35px;
+    letter-spacing: 0;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.container .more_info:hover {
+    padding: 2px;
+    background-color: #ddd;
+}
+
+.image-container {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.container-arrow ul {
+    list-style: none;
+    padding-left: 6vw;
+    margin: 0;
+    display: flex;
+    width: 60%;
+}
+
+.container-arrow ul li{
+    font-size: 24px;
+}
+
+.container-arrow img {
+    padding-left: 5px;
+    padding-top: 35px;
+    padding-right: 15px;
+    width: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .container-text p {
+        width: 70%;
+        padding-left: 6vw;
+        font-weight: 400;
+        color: #000000;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .image {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+    }
+}

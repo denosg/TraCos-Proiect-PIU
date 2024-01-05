@@ -1,0 +1,32 @@
+.container-flota {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.photo-list li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.photo-list img {
+    cursor: pointer;
+    max-width: 80%;
+    height: auto;
+}
+
+.photo-list p {
+    color: #99110f;
+    font-size: 38px;
+    margin-top: 10px;
+}

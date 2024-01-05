@@ -1,0 +1,45 @@
+.image-container {
+    position: relative;
+}
+
+.image-with-overlay {
+    width: 35vw;
+    /* Adjust the width as needed */
+    display: block;
+    margin: 0 auto;
+    /* Center the image */
+    transition: filter 0.3s ease;
+    /* Add a smooth transition effect for the filter property */
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    /* Initially hide the overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the background color and transparency */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    /* Add rounded corners */
+    font-weight: bold;
+    /* Make the text bold */
+    transition: opacity 0.3s ease;
+    /* Add a smooth transition effect */
+    pointer-events: none;
+    /* Allow interactions with the underlying image */
+}
+
+.image-container:hover .image-with-overlay {
+    filter: blur(5px);
+    cursor: pointer !important;
+    /* Apply the blur effect on hover */
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1;
+}

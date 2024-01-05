@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-costel {
+    margin-right: 20px;
+    width: 5vw;
+    height: 4vw;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    /* Link color */
+    font-weight: bold;
+    /* Adjust as needed */
+    padding: 5px 10px;
+    /* Adjust the padding as needed */
+    border-radius: 5px;
+    font-size: 25px;
+    /* Optional: Add some rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    /* Hover background color */
+}
+
+@media screen and (max-width: 767px) {
+    .logo-costel {
+        margin-right: 20px;
+        width: 14vw;
+        height: 10vw;
+    }
+}
