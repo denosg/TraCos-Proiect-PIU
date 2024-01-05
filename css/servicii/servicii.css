@@ -1,0 +1,16 @@
+@media screen and (max-width: 767px) {
+    .container .more_info {
+        display: none;
+    }
+
+    .container img {
+        display: none;
+    }
+
+    .container .type {
+        font-weight: 700;
+        color: #99110f;
+        font-size: 35px;
+        justify-content: center;
+    }
+}

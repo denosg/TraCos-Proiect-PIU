@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/horizontal-line.css">
+    <link rel="stylesheet" href="css/side_nav.css">
+    <link rel="stylesheet" href="css/servicii/servicii.css">
     <title>TraCos</title>
 </head>
 
 <body>
     <header>
-        <img class="logo-costel" src="img/logo-costel.png" />
+        <img class="logo-costel" id="logo" src="img/logo-costel.png" />
         <nav>
             <ul>
                 <li><a href="index.html">TraCos</a></li>
@@ -22,6 +24,20 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <span class="open-btn" onclick="openNav()">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </span>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">TraCos</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="flota.html">Flota</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </header>
 
     <div class="horizontal-line"></div>
@@ -36,7 +52,7 @@
     <div class="container">
         <ul class="fuel_type">
             <li class="type">
-                <p id="info">Transport Intern</p>
+                <p id="info1">Transport Intern</p>
             </li>
             <li><img src="img/arrow-2.png" alt=""></li>
             <li class="more_info" id="link1">
@@ -45,7 +61,7 @@
         </ul>
         <ul class="fuel_type">
             <li class="type">
-                Transport Extern
+                <p id="info2">Transport Extern</p>
             </li>
             <li><img src="img/arrow-2.png" alt=""></li>
             <li class="more_info" id="link2">
@@ -60,6 +76,8 @@
     </footer>
 
     <script src="./js/servicii.js"></script>
+    <script src="./js/load_hamburger.js"></script>
+    <script src="./js/side_nav.js"></script>
 </body>
 
 </html>

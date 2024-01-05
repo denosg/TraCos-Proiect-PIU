@@ -6,4 +6,9 @@ window.addEventListener('DOMContentLoaded', function () {
     } else {
         text1.textContent = `Camioanele Scania se evidențiază prin performanță excelentă, eficiență energetică și design inovator, reprezentând soluții fiabile și durabile pentru transportul rutier.`;
     }
+
+    const logo = this.document.getElementById('logo')
+    logo.addEventListener('click', () => {
+        window.location.href = '../../index.html';
+    })
 });

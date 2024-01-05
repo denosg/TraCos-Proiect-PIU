@@ -23,4 +23,9 @@ window.addEventListener('DOMContentLoaded', function () {
         var destinationUrl = '../src/camioane/man.html';
         window.location.href = destinationUrl
     });
+
+    const logo = this.document.getElementById('logo')
+    logo.addEventListener('click', () => {
+        window.location.href = '../index.html';
+    })
 });

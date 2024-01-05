@@ -4,3 +4,26 @@
     max-width: 60%;
     height: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .photo-list {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .photo-list li {
+        display: inline-block;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .photo-list img {
+        width: 300px;
+        height: auto;
+    }
+
+    .container-flota {
+        text-align: center;
+    }
+}

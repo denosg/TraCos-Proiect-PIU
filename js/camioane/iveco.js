@@ -6,4 +6,8 @@ window.addEventListener('DOMContentLoaded', function () {
     } else {
         text1.textContent = `Camioanele Iveco impresionează prin versatilitate, oferind soluții de transport eficiente și fiabile. Cu tehnologii avansate și inovații constante, vehiculele Iveco sunt concepute pentru a satisface nevoile diverse ale industriei transportului rutier, evidențiindu-se prin performanță și durabilitate în fiecare călătorie.`;
     }
+    const logo = this.document.getElementById('logo')
+    logo.addEventListener('click', () => {
+        window.location.href = '../../index.html';
+    })
 });

@@ -6,4 +6,9 @@ window.addEventListener('DOMContentLoaded', function () {
     } else {
         text1.textContent = `Pentru a-ți oferi cea mai bună experiență, tarifele noastre de transport extern sunt calculate cu atenție, având în vedere tipul de marfă, distanța parcursă și specificațiile vehiculului TIR. Astfel, garantăm nu doar siguranța și securitatea mărfii tale, ci și o eficiență maximă în procesul de transport.`;
     }
+
+    const logo = this.document.getElementById('logo')
+    logo.addEventListener('click', () => {
+        window.location.href = '../index.html';
+    })
 });

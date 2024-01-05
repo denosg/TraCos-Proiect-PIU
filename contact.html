@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/contact/contact.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/side_nav.css">
+    <link rel="stylesheet" href="css/servicii/servicii.css">
 </head>
 
 <body>
     <header>
-        <img class="logo-costel" src="img/logo-costel.png" />
+        <img class="logo-costel" id="logo" src="img/logo-costel.png" />
         <nav>
             <ul>
                 <li><a href="index.html">TraCos</a></li>
@@ -19,6 +21,20 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <span class="open-btn" onclick="openNav()">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </span>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">TraCos</a>
+            <a href="servicii.html">Servicii</a>
+            <a href="flota.html">Flota</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </header>
     <section>
         <div class="container">
@@ -93,6 +109,8 @@
             </div>
         </div>
     </section>
+    <script src="./js/load_hamburger.js"></script>
+    <script src="./js/side_nav.js"></script>
 </body>
 
 </html>

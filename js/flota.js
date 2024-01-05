@@ -16,4 +16,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
         window.location.href = destinationUrl
     });
+
+    const logo = this.document.getElementById('logo')
+    logo.addEventListener('click', () => {
+        window.location.href = 'index.html';
+    })
 });
